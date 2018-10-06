@@ -1,8 +1,8 @@
 package org.se.lab;
 
 public class Cd extends Article {
-    public Cd(int id, Type type, String description, double price) {
-        super(id, type, description, price);
+    public Cd(int id, String description, double price) {
+        super(id, description, price);
     }
 
     @Override
