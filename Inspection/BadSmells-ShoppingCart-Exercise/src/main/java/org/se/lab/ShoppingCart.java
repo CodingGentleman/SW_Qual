@@ -2,11 +2,12 @@ package org.se.lab;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class ShoppingCart
 {
 	private int id;
-	private ArrayList articles = new ArrayList();
+	private List<Article> articles = new ArrayList<>();
 
 	public ShoppingCart(int id) {
 		this.id = id;
@@ -26,7 +27,7 @@ public class ShoppingCart
 		}		
 		return s;
 	}
-	
+
 	
 	public String toXml()
 	{
