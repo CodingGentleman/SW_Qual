@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public class Article
+public abstract class Article
 {
 	enum Type {BOOK, CD, DVD};
 
@@ -9,8 +9,6 @@ public class Article
 	private Type type;
 
 	private String description;
-
-	private String author;	// Temporary Field
 
 	private double price;
 
@@ -31,14 +29,6 @@ public class Article
 
 	public String getDescription() {
 		return description;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
-	public String getAuthor() {
-		return author;
 	}
 
 	public double getPrice() {

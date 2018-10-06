@@ -25,7 +25,8 @@ public class ShoppingCart
 			switch(a.getType())
 			{
 				case BOOK:
-					s += "BOOK:\t" + a.getId() + "\t" + a.getDescription() + "\t" + a.getAuthor() + "\t" + a.getPrice() + "\n";
+					// TODO: refactor to avoid cast
+					s += "BOOK:\t" + a.getId() + "\t" + a.getDescription() + "\t" + ((Book)a).getAuthor() + "\t" + a.getPrice() + "\n";
 				break;
 				
 				case CD:
@@ -52,7 +53,7 @@ public class ShoppingCart
 				case BOOK:
 					xml += "\t<book id=\"" + a.getId() + "\" description=\"" + a.getDescription()
 							+ "\" price=\"" + a.getPrice()
-							+ "\" author=\"" + a.getAuthor() + "\"/>\n";
+							+ "\" author=\"" + ((Book)a).getAuthor() + "\"/>\n";
 				break;
 				
 				case CD:

@@ -17,14 +17,13 @@ public class ShoppingCartTest
 	{
 		cart = new ShoppingCart();
 		
-		Article cd = new Article(1, Article.Type.CD, "Rolling Stones", 12.99	);
+		Article cd = new Cd(1, Article.Type.CD, "Rolling Stones", 12.99	);
 		cart.articles.add(cd);
 		
-		Article book = new Article(7, Article.Type.BOOK, "Refactoring", 57.80);
-		book.setAuthor("Martin Fowler");
+		Article book = new Book(7, Article.Type.BOOK, "Refactoring", "Martin Fowler", 57.80);
 		cart.articles.add(book);
 		
-		Article dvd = new Article(13, Article.Type.DVD, "ACDC Live", 24.90);
+		Article dvd = new Dvd(13, Article.Type.DVD, "ACDC Live", 24.90);
 		cart.articles.add(dvd);		
 	}
 	
