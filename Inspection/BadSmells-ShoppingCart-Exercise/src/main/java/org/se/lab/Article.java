@@ -1,6 +1,6 @@
 package org.se.lab;
 
-public abstract class Article
+abstract class Article
 {
 	private int id;
 
@@ -8,22 +8,22 @@ public abstract class Article
 
 	private double price;
 
-	public Article(int id, String description, double price) {
+	Article(int id, String description, double price) {
 		this.id = id;
 		this.description = description;
 		this.price = price;
 	}
 
-	public int getId() {
+	int getId() {
 		return id;
 	}
 
 
-	public String getDescription() {
+	String getDescription() {
 		return description;
 	}
 
-	public double getPrice() {
+	double getPrice() {
 		return price;
 	}
 

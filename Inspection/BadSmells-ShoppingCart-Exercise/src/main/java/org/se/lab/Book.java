@@ -8,7 +8,7 @@ public class Book extends Article {
         this.author = author;
     }
 
-    public String getAuthor() {
+    private String getAuthor() {
         return author;
     }
 

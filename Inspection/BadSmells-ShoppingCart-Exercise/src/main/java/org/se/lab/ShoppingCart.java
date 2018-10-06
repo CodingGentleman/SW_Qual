@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class ShoppingCart
+class ShoppingCart
 {
 	private int id;
 	private List<Article> articles = new ArrayList<>();
