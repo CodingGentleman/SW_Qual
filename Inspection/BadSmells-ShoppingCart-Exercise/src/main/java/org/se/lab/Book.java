@@ -21,4 +21,11 @@ public class Book extends Article {
     public String toString() {
         return getTypeName()+":\t"+getId() + "\t" + getDescription() + "\t" + getAuthor() + "\t" + getPrice() + "\n";
     }
+
+    @Override
+    public String toXml() {
+        return "\t<"+getTypeName().toLowerCase()+" id=\"" + getId() + "\" description=\"" + getDescription()
+                + "\" price=\"" + getPrice()
+                + "\" author=\"" + getAuthor() + "\"/>\n";
+    }
 }

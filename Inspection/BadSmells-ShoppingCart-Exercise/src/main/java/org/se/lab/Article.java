@@ -41,4 +41,9 @@ public abstract class Article
 	public String toString() {
 		return getTypeName()+":\t"+getId() + "\t" + getDescription() + "\t" + getPrice() + "\n";
 	}
+
+	public String toXml() {
+		return "\t<"+getTypeName().toLowerCase()+" id=\"" + getId() + "\" description=\"" + getDescription()
+				+ "\" price=\"" + getPrice() + "\"/>\n";
+	}
 }
