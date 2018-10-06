@@ -15,16 +15,16 @@ public class ShoppingCartTest
 	@Before
 	public void setup()
 	{
-		cart = new ShoppingCart();
+		cart = new ShoppingCart(0);
 		
 		Article cd = new Cd(1, Article.Type.CD, "Rolling Stones", 12.99	);
-		cart.articles.add(cd);
+		cart.addArticle(cd);
 		
 		Article book = new Book(7, Article.Type.BOOK, "Refactoring", "Martin Fowler", 57.80);
-		cart.articles.add(book);
+		cart.addArticle(book);
 		
 		Article dvd = new Dvd(13, Article.Type.DVD, "ACDC Live", 24.90);
-		cart.articles.add(dvd);		
+		cart.addArticle(dvd);
 	}
 	
 

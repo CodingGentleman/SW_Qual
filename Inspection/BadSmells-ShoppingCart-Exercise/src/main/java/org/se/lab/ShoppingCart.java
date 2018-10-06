@@ -5,17 +5,17 @@ import java.util.Iterator;
 
 public class ShoppingCart
 {
-	/*
-	 * Property: id
-	 */
-	public int id;
-	
-	/*
-	 * Property: articles
-	 */
-	public ArrayList articles = new ArrayList();
+	private int id;
+	private ArrayList articles = new ArrayList();
 
-	
+	public ShoppingCart(int id) {
+		this.id = id;
+	}
+
+	public void addArticle(Article a) {
+		articles.add(a);
+	}
+
 	public String toString()
 	{
 		String s = "Cart: " + id + "\n";
