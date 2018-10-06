@@ -6,8 +6,8 @@ import java.util.List;
 
 class ShoppingCart
 {
-	private int id;
-	private List<Article> articles = new ArrayList<>();
+	private final int id;
+	private final List<Article> articles = new ArrayList<>();
 
 	public ShoppingCart(int id) {
 		this.id = id;

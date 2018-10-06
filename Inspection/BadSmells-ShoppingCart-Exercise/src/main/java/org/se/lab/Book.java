@@ -1,7 +1,7 @@
 package org.se.lab;
 
 public class Book extends Article {
-    private String author;
+    private final String author;
 
     public Book(int id, String description, String author, double price) {
         super(id, description, price);

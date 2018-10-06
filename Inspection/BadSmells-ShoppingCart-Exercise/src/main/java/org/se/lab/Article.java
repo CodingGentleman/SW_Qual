@@ -2,11 +2,11 @@ package org.se.lab;
 
 abstract class Article
 {
-	private int id;
+	private final int id;
 
-	private String description;
+	private final String description;
 
-	private double price;
+	private final double price;
 
 	Article(int id, String description, double price) {
 		this.id = id;
