@@ -11,4 +11,14 @@ public class Book extends Article {
     public String getAuthor() {
         return author;
     }
+
+    @Override
+    protected String getTypeName() {
+        return "BOOK";
+    }
+
+    @Override
+    public String toString() {
+        return getTypeName()+":\t"+getId() + "\t" + getDescription() + "\t" + getAuthor() + "\t" + getPrice() + "\n";
+    }
 }

@@ -34,4 +34,11 @@ public abstract class Article
 	public double getPrice() {
 		return price;
 	}
+
+	protected abstract String getTypeName();
+
+	@Override
+	public String toString() {
+		return getTypeName()+":\t"+getId() + "\t" + getDescription() + "\t" + getPrice() + "\n";
+	}
 }

@@ -21,22 +21,8 @@ public class ShoppingCart
 		String s = "Cart: " + id + "\n";
 		for(Iterator it = articles.iterator(); it.hasNext();)
 		{
-			Article a = (Article)it.next();	
-			switch(a.getType())
-			{
-				case BOOK:
-					// TODO: refactor to avoid cast
-					s += "BOOK:\t" + a.getId() + "\t" + a.getDescription() + "\t" + ((Book)a).getAuthor() + "\t" + a.getPrice() + "\n";
-				break;
-				
-				case CD:
-					s += "CD:\t" + a.getId() + "\t" + a.getDescription() + "\t" + a.getPrice() + "\n";
-				break;
-				
-				case DVD:
-					s += "DVD:\t" + a.getId() + "\t" + a.getDescription() + "\t" + a.getPrice() + "\n";
-				break;
-			}
+			Article a = (Article)it.next();
+			s += a.toString();
 		}		
 		return s;
 	}
