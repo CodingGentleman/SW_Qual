@@ -1,7 +1,6 @@
 package org.se.lab;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 class ShoppingCart
@@ -19,25 +18,16 @@ class ShoppingCart
 
 	public String toString()
 	{
-		String s = "Cart: " + id + "\n";
-		for(Iterator it = articles.iterator(); it.hasNext();)
-		{
-			Article a = (Article)it.next();
-			s += a.toString();
-		}		
-		return s;
+		final StringBuilder s = new StringBuilder("Cart: " + id + "\n");
+		articles.forEach(a -> s.append(a.toString()));
+		return s.toString();
 	}
 
 	
 	public String toXml()
 	{
-		String xml = "<shoppingcart id=\"" + id + "\">\n";
-		for(Iterator it = articles.iterator(); it.hasNext();)
-		{
-			Article a = (Article)it.next();
-			xml += a.toXml();
-		}				
-		xml += "</shoppingcart>";
-		return xml;
+		final StringBuilder xml = new StringBuilder("<shoppingcart id=\"" + id + "\">\n");
+		articles.forEach(a -> xml.append(a.toXml()));
+		return xml.append("</shoppingcart>").toString();
 	}
 }
