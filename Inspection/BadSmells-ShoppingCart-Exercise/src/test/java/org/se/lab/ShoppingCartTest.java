@@ -25,7 +25,8 @@ public class ShoppingCartTest {
     }
 
     @Test
-    public void testToString() {
+    public void testToString()
+    {
         String s = cart.toString();
 
         final String EXPECTED =
@@ -38,7 +39,8 @@ public class ShoppingCartTest {
     }
 
     @Test
-    public void testToXml() {
+    public void testToXml()
+    {
         String s = cart.toXml();
 
         final String EXPECTED =
