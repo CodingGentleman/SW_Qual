@@ -1,0 +1,81 @@
+commit 243022dd0757a83251c2303bd9f77892485beac1
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:55:48 2018 +0200
+
+    refactored for-loops in ShoppingCart to use stream apiq
+
+commit 6bf091b635b9f63ba84571ffd265478ea2a9ccd5
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:51:47 2018 +0200
+
+    set members to final in Article, Book and ShoppingCart
+
+commit 8d58ecb52972ca2b74eebeec6e051f2ee13f1b2b
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:50:10 2018 +0200
+
+    Data Class: reduced visibilities. class Article and all of its public methods to package private, getAuthor in Book to private, ShoppingCart class to package private
+
+commit f74249483b7166405b38192e0f11049a5c69b5de
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:48:56 2018 +0200
+
+    fixed unchecked raws in Shoppingcart
+
+commit f4b968738c56c4158548f6817445bc9e438e7ce9
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:45:45 2018 +0200
+
+    Dispensable: removed dead code (enum Type in Article)
+
+commit 01de5e5e97c10cce6f545774dd182ff4e39bee71
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:41:36 2018 +0200
+
+    OO-Abuser: Implemented toXml in Article. Addded toXml overwrite in Book. Removed switch statement in Shoppingcart
+
+commit 36832b7a4a6102127d58c7484b4dcf01c33467c7
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:33:53 2018 +0200
+
+    Dispensable: Comments and Data Class: introduced encapsulation in Shoppingcart. Refactored test setup
+
+commit 8a8411e5b9ed041fb4d9174d15be01c4be47d403
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:30:08 2018 +0200
+
+    OO-Abuser: Introduced abstract typeName in Article. Implemented toString to generate members string. Implemented typeName in subclasses, added explicit toString in Book. refactored Shoppingcart and removed switch statement in toString
+
+commit 7af998b6957615fe6b745614dff20c23026fb9d7
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:23:23 2018 +0200
+
+    OO-Abuser: made Article abstract and removed temporary field. Introduced new subclasses Book, Cd and Dvd. Added cast into Book in Shoppingcart (added TODO to refactor this). Fixed test setup
+
+commit fc89a355dd98d127e698a7d86fa2eb1cc906da2c
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 10:05:58 2018 +0200
+
+    Data Class: introduced encapsulation in Article (set all fields private, added getter/setter) refactored ShoppingCart and Test Setup
+
+commit bfaef9eecb87c3f22af75e1c7d43b804651e65b6
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 09:56:37 2018 +0200
+
+    Dispensable: Comments. Removed in Article 
+
+
+commit b1bc707f7dfbff225fbcecb5eb555111895a916a
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 09:55:59 2018 +0200
+
+    BUGFIX: fixed xml output in Shoppingcart (typo)
+
+
+commit 21efaa872e1d393259e9f9f7f902339585b63a2a
+Author: Kevin Schmid <kevin.schmid@edu.fh-joanneum.at>
+Date:   Sat Oct 6 09:55:48 2018 +0200
+
+    added gitignore file
+
+
